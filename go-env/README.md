@@ -7,5 +7,7 @@ This is initially being used as a test for the sake of keeping the host environm
 Tested in my env by running like so from my Mac with Docker Desktop:
 
 ```
-docker run -it -v ${PWD}:/work go-env /bin/bash
+docker run -it -v ${PWD}:/work quay.io/kywa/go-env:latest /bin/bash
 ```
+
+* [Go](https://golang.org) Version: 1.15.8

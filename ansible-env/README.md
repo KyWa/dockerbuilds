@@ -7,5 +7,8 @@ This is initially being used as a test for the sake of keeping the host environm
 Tested in my env by running like so from my Mac with Docker Desktop:
 
 ```
-docker run -it -v ${PWD}:/work -v ~/.ssh:/root/.ssh ansible-env /bin/bash
+docker run -it -v ${PWD}:/work -v ~/.ssh:/root/.ssh quay.io/kywa/ansible-env:latest /bin/bash
 ```
+
+* [Ansible](https://ansible.com) Version: 2.10.5
+* [Python](https://python.org) Version: 3.6.8
