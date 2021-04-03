@@ -1,3 +1,3 @@
-FROM golang:1.15
+FROM golang:1.16
 
 WORKDIR /work
