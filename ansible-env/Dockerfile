@@ -8,16 +8,16 @@ ENV pip_packages "ansible"
 RUN echo "enabled=0" >> /etc/yum/pluginconf.d/subscription-manager.conf
 
 # Install requirements.
-RUN yum makecache --timer \
- && yum -y install initscripts \
- && yum -y update \
- && yum -y install \
+RUN dnf makecache --timer \
+ && dnf -y install initscripts \
+ && dnf -y update \
+ && dnf -y install \
       openssh-clients \
       sudo \
       which \
       hostname \
       python3 \
- && yum clean all
+ && dnf clean all
 
 # Upgrade PIP for Crypto package
 RUN pip3 install --upgrade pip
