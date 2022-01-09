@@ -1,4 +1,4 @@
-FROM docker.io/openjdk:jdk
+FROM openjdk:17.0.1-jdk-oraclelinux8
 
 RUN mkdir /minecraft
 
