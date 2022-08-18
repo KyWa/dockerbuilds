@@ -1,5 +1,7 @@
 # Golang Environment in Docker
 
+[![Docker Repository on Quay](https://quay.io/repository/kywa/goenv/status?token=af0678c4-4ea1-414b-b046-44b18afdf1b1 "Docker Repository on Quay")](https://quay.io/repository/kywa/goenv)
+
 Build is based from Marcel Dempers located [here](https://github.com/marcel-dempers/docker-development-youtube-series/blob/master/golang/introduction/dockerfile)
 
 This is initially being used as a test for the sake of keeping the host environment clean and running all jobs and development inside a container.
