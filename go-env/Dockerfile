@@ -1,3 +1,3 @@
-FROM docker.io/golang:1.16
+FROM docker.io/golang:latest
 
 WORKDIR /work

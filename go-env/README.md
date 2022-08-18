@@ -2,14 +2,16 @@
 
 [![Docker Repository on Quay](https://quay.io/repository/kywa/goenv/status?token=af0678c4-4ea1-414b-b046-44b18afdf1b1 "Docker Repository on Quay")](https://quay.io/repository/kywa/goenv)
 
-Build is based from Marcel Dempers located [here](https://github.com/marcel-dempers/docker-development-youtube-series/blob/master/golang/introduction/dockerfile)
-
 This is initially being used as a test for the sake of keeping the host environment clean and running all jobs and development inside a container.
 
-Tested in my env by running like so from my Mac with Docker Desktop:
+## Usage
+
+Run from your working directory where your `go` code lives:
 
 ```
 docker run -it -v ${PWD}:/work quay.io/kywa/go-env:latest /bin/bash
 ```
 
-* [Go](https://golang.org) Version: 1.15.8
+</br>
+
+* [Go](https://golang.org) Version: 1.19
