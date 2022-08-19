@@ -9,7 +9,6 @@ on:
 
 env:
   IMAGE_NAME: ansible-env
-  IMAGE_VERSION: 2.13.3
   REGISTRY: quay.io
 
 jobs:
@@ -35,10 +34,8 @@ jobs:
       - name: Build Image
         run: |
           cd code-server
-          docker build -t ${{ env.REGISTRY }}/${{ secrets.QUAY_USER }}/${{ env.IMAGE_NAME }}:${{ env.IMAGE_VERSION }} .
-          docker tag ${{ env.REGISTRY }}/${{ secrets.QUAY_USER }}/${{ env.IMAGE_NAME }}:${{ env.IMAGE_VERSION }} ${{ env.REGISTRY }}/${{ secrets.QUAY_USER }}/${{ env.IMAGE_NAME }}:latest
+          docker build -t ${{ env.REGISTRY }}/${{ secrets.QUAY_USER }}/${{ env.IMAGE_NAME }}:latest .
 
       - name: Push Image
         run: |
-          docker push ${{ env.REGISTRY }}/${{ secrets.QUAY_USER }}/${{ env.IMAGE_NAME }}:${{ env.IMAGE_VERSION }}
           docker push ${{ env.REGISTRY }}/${{ secrets.QUAY_USER }}/${{ env.IMAGE_NAME }}:latest
