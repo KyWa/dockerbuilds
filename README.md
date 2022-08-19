@@ -5,5 +5,4 @@ This idea came to me years ago from watching Jessie Frazelle talk at DockerCon o
 All container images are hosted on [Quay.io](https://quay.io/)
 
 ## Build Statuses
-
-![Build](https://github.com/KyWa/dockerbuilds/actions/workflows/kcode-publish.yml/badge.svg)
+[![KCode Build/Push](https://github.com/KyWa/dockerbuilds/actions/workflows/kcode-publish.yml/badge.svg)](https://github.com/KyWa/dockerbuilds/actions/workflows/kcode-publish.yml)
