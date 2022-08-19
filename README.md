@@ -5,4 +5,7 @@ This idea came to me years ago from watching Jessie Frazelle talk at DockerCon o
 All container images are hosted on [Quay.io](https://quay.io/)
 
 ## Build Statuses
+[![ansible-env_build](https://github.com/KyWa/dockerbuilds/actions/workflows/ansible-env-publish.yml/badge.svg)](https://github.com/KyWa/dockerbuilds/actions/workflows/ansible-env-publish.yml)
 [![code-server_build](https://github.com/KyWa/dockerbuilds/actions/workflows/kcode-publish.yml/badge.svg)](https://github.com/KyWa/dockerbuilds/actions/workflows/kcode-publish.yml)
+[![go-env_build](https://github.com/KyWa/dockerbuilds/actions/workflows/go-env-publish.yml/badge.svg)](https://github.com/KyWa/dockerbuilds/actions/workflows/go-env-publish.yml)
+[![minecraft-server_build](https://github.com/KyWa/dockerbuilds/actions/workflows/minecraft-publish.yml/badge.svg)](https://github.com/KyWa/dockerbuilds/actions/workflows/minecraft-publish.yml)
