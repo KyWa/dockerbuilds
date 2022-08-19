@@ -1,3 +1,4 @@
+# Using Red Hat UBI as base image
 FROM registry.access.redhat.com/ubi8/ubi:latest
 
 # Prep for install
