@@ -1,5 +1,5 @@
 ---
-name: KCode Build/Push 
+name: code-server_build
 
 on:
   push:
