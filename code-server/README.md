@@ -1,5 +1,7 @@
 # VS Code Environment in Docker
 
+![Build](https://github.com/KyWa/dockerbuilds/actions/workflows/kcode-publish.yml/badge.svg)
+
 This is an image for running VS Code in a browser (aka code-server). This image has the following tools installed:
 
 * `python`
