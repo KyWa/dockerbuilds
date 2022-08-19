@@ -35,9 +35,9 @@ jobs:
       - name: Build Image
         run: |
           cd code-server
-          docker build -t ${{ env.REGISTRY }}/${{ secrets.QUAY_USER }}/${{ env.QUAY_IMAGE }}:${{ env.IMAGE_VERSION }} .
+          docker build -t ${{ env.REGISTRY }}/${{ secrets.QUAY_USER }}/${{ env.IMAGE_NAME }}:${{ env.IMAGE_VERSION }} .
 
       - name: Push Image
         run: |
-          docker push ${{ env.REGISTRY }}/${{ secrets.QUAY_USER }}/${{ env.QUAY_IMAGE }}:${{ env.IMAGE_VERSION }}
-          docker push ${{ env.REGISTRY }}/${{ secrets.QUAY_USER }}/${{ env.QUAY_IMAGE }}:latest
+          docker push ${{ env.REGISTRY }}/${{ secrets.QUAY_USER }}/${{ env.IMAGE_NAME }}:${{ env.IMAGE_VERSION }}
+          docker push ${{ env.REGISTRY }}/${{ secrets.QUAY_USER }}/${{ env.IMAGE_NAME }}:latest
