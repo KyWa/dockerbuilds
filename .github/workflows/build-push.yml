@@ -1,5 +1,5 @@
 ---
-name: buildem 
+name: KCode Build/Push 
 
 on:
   push:
