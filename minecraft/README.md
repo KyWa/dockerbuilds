@@ -1,9 +1,14 @@
-# Minecraft Dockerfile
+# Minecraft Server Dockerfile
 
-To build this image run the following:
+This `Dockerfile` will build a Red Hat UBI image with Java (OpenJDK) that will, upon start up, run a Minecraft Server. If using persistent storage, the start up verifies if an existing `server.jar` is in `/minecraft` and will not overwrite it unless the environment variable `MC_UPGRADE` is set. It can be set to anything as the start up only checks to see if the variable is empty.
+
+## Usage
+When running in `docker` or `podman`, run it like so:
 
 ```sh
-$ ./builder.sh
+$ podman run -d -v minecraft_data:/minecraft -p 25565:25565 -e MC_JAVA_OPTS="-Xms512m -Xmx2048m" quay.io/kywa/minecraft-server:latest
 ```
 
-This will download the latest `server.jar` and `jq` as its needed to verify the latest version. Once the latest Minecraft Server has been downloaded, it will build the image using `docker` and clean up the `server.jar` and `jq` files.
+### Vars
+`MC_JAVA_OPTS` = Java Options for running Minecraft Server. Example: `-Xms512m -Xmx2048m`
+`MC_UPGRADE` = Whether or not to upgrade the existing `server.jar` Example: `yes`
