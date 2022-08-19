@@ -36,6 +36,7 @@ jobs:
         run: |
           cd code-server
           docker build -t ${{ env.REGISTRY }}/${{ secrets.QUAY_USER }}/${{ env.IMAGE_NAME }}:${{ env.IMAGE_VERSION }} .
+          docker tag ${{ env.REGISTRY }}/${{ secrets.QUAY_USER }}/${{ env.IMAGE_NAME }}:${{ env.IMAGE_VERSION }} ${{ env.REGISTRY }}/${{ secrets.QUAY_USER }}/${{ env.IMAGE_NAME }}:latest
 
       - name: Push Image
         run: |
