@@ -12,6 +12,4 @@ Run from your working directory where your `go` code lives:
 docker run -it -v ${PWD}:/work quay.io/kywa/go-env:latest /bin/bash
 ```
 
-</br>
-
 * [Go](https://golang.org) Version: 1.19

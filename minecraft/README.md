@@ -12,3 +12,4 @@ $ podman run -d -v minecraft_data:/minecraft -p 25565:25565 -e MC_JAVA_OPTS="-Xm
 ### Vars
 `MC_JAVA_OPTS` = Java Options for running Minecraft Server. Example: `-Xms512m -Xmx2048m`
 `MC_UPGRADE` = Whether or not to upgrade the existing `server.jar` Example: `yes`
+
