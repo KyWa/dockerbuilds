@@ -11,7 +11,7 @@ export PATH=$PATH:/home/coder/.local/bin
 if [ ! -e ${HOME}/.local/share/code-server/User/settings.json ]; then
 mkdir -p ${HOME}/.local/share/code-server/User
 echo '{
-    "workbench.colorTheme": "Abyss",
+    "workbench.colorTheme": "Dark",
     "terminal.integrated.defaultProfile.linux": "bash",
     "terminal.integrated.shell.linux": "/bin/bash",
     "telemetry.enableTelemetry": false
